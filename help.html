@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankat Saathi - Find Nearby Help</title>
+    
+    <!-- Tailwind CSS for modern, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="help.js" defer></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* background-color: #f0f4f8; */
+            background: linear-gradient(180deg, #eaeeed 20%, #74f0e5 100%);
+        }
+    </style>
+</head>
+<body class="bg-[#f0f4f8] text-gray-900 antialiased    min-h-screen">
+
+    <header style="background-color: #CDEDF6;"><!--md:space-y-0 p-6 card--> <!---->
+            <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 p-2">
+                <div class="text-center md:text-left"> <!---->
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800">Sankat Saathi</h1>
+                    <p class="text-md text-gray-500 mt-1">Disaster Preparedness for Schools and Colleges</p>
+                </div>
+                <div class="flex items-center space-x-4"> <!---->
+                    <div class="text-right"> <!---->
+                        <p class="font-bold text-lg text-gray-700" id="user-name">Hello, User!</p>
+                        <p class="text-sm text-gray-500">Your Credits: <span id="user-credits" class="font-semibold text-green-600">0</span></p>
+                    </div>
+                    <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-xl font-bold text-gray-600">U</div>
+                </div>
+            </div>
+            <div id="navigation-bar">
+                <ul class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 p-4 font-extrabold" style="background-color:#5EB1BF;">
+                    <li><a href="./index.html">Home <i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="./news.html">News <i class="fa-solid fa-newspaper"></i></a></li>
+                    <li><a href="#">Help <i class="fa-solid fa-hand-holding-hand"></i></a></li>
+                    <li><a href="./contactDirectory.html" target="_blank">Contact Directories <i class="fa-solid fa-address-book"></i></a></li>
+                    <li><a href="./donation.html">Donations <i class="fa-solid fa-hand-holding-dollar"></i></a></li>
+                    <li>Contact Us <i class="fa-solid fa-at"></i></li>
+                    <li style="color:rgb(158, 77, 77)">Log Out <i class="fa-solid fa-right-from-bracket"></i></li>
+                </ul>
+            </div>
+            
+    </header>
+
+    <main class="container mx-auto mt-8 p-4 text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Find Nearby Help Services</h2>
+        <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+            If you are in an emergency, use this service to find the nearest hospitals and shelter camps.
+            Please allow location access when prompted by your browser.
+        </p>
+
+        <button id="find-help-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-xl shadow-lg transition-transform transform hover:scale-105">
+            Find Help Near Me
+        </button>
+
+        <div id="status-message" class="mt-6 text-lg text-gray-700 h-8"></div>
+
+        <div id="results-container" class="hidden mt-10 text-left">
+            </div>
+    </main>
+
+    <footer class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0"><!--md:space-y-0 p-6 card-->
+        <div class="text-center md:text-left">
+
+            <p class="text-md text-gray-500 mt-1">created with <i class="fa-solid fa-heart"></i> by NEXUS NODE.</p>
+            <p class="text-md text-gray-500 mt-1">Stay Safe, Stay Alert.</p>
+        </div>
+            
+    </footer>
+
+</body>
+</html>
